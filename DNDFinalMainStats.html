@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>D&amp;D 3.5 Character Sheet Generator</title>
+  <link rel="stylesheet" href="DNDFinal.CSS">
+  <script type="text/javascript" src="DNDFinal.js">
+  </script>
+  </head>
+  <body>
+    <div class="firstHalfSplit">
+      <input type="text" id="race" placeholder="Race">
+      <input type="text" id="firstClass" placeholder="First Class">
+      <input type="text" id="firstLevel" placeholder="First Class Level">
+      <input type="text" id="secondClass" placeholder="Second Class">
+      <input type="text" id="secondLevel" placeholder="Second Class Level">
+      <input type="text" id="thirdClass" placeholder="Third Class">
+      <input type="text" id="thirdLevel" placeholder="Third Class Level">
+      <input type="text" id="skill" placeholder="Skill Ranks">
+      <input type="text" id="bab" placeholder="Base Attack Increment (1/2, 3/4, or 1)">
+      <input type="text" id="hp" placeholder="Hit Points">
+      <input type="text" id="classFeatures" placeholder="Class Features">
+      <input type="text" id="racialTraits" placeholder="Racial Traits">
+      <p></p>
+      <button type="button" onclick="addRacialTrait()"> Add Racial Trait
+      </button>
+      <button type="button" onclick="addClassFeature()"> Add Class Feature
+      </button>
+      <p></p>
+      <button type="button" onclick="classStats()"> Enter
+      </button>
+      <p></p>
+      <p id="racialMods"> Racial Traits:
+      </p>
+      <p id="classTraits"> Class Features:
+      </p>
+      <a href="DNDFinalSkillsAndInventory.html"> Click here after entering class stats.
+      </a>
+    </div>
+    <div class="secondHalfSplit">
+      <button type="button" onclick="fourSidedDie()"> 1d4
+      </button>
+      <button type="button" onclick="sixSidedDie()"> 1d6
+      </button>
+      <button type="button" onclick="eightSidedDie()"> 1d8
+      </button>
+      <button type="button" onclick="tenSidedDie()"> 1d10
+      </button>
+      <button type="button" onclick="twelveSidedDie()"> 1d12
+      </button>
+      <button type="button" onclick="clearRolls()"> Clear Rolls
+      </button>
+      <p id="rolls"> Your rolls are: </p>
+    </div>
+  </body>
+</html>
