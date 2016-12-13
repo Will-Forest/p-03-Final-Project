@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D&amp;D 3.5 Character Sheet Generator</title>
+    <!The user is meant to enter their basic stats here, namely the ones that won't affect gameplay.>
+    <link rel="stylesheet" href="DNDFinal.CSS">
+    <script type="text/javascript" src="DNDFinal.js">
+    </script>
+  </head>
+  <body>
+    <div class="firstHalfSplit">
+      <input type="text" id="name" placeholder="Character Name">
+      <input type="text" id="alignment" placeholder="Alignment">
+      <input type="text" id="gender" placeholder="Gender">
+      <input type="text" id="height" placeholder="Height">
+      <input type="text" id="weight" placeholder="Weight">
+      <input type="text" id="size" placeholder="Size Category">
+      <input type="text" id="str" placeholder="Strength">
+      <input type="text" id="dex" placeholder="Dexterity">
+      <input type="text" id="con" placeholder="Constitution">
+      <input type="text" id="int" placeholder="Intelligence">
+      <input type="text" id="wis" placeholder="Wisdom">
+      <input type="text" id="cha" placeholder="Charisma">
+      <p></p>
+      <button type="button" onclick="baseStats()"> Enter
+      </button>
+      <p></p>
+      <a href="DNDFinalMainStats.html"> Click here after entering stats.
+      </a>
+    </div>
+    <div class="secondHalfSplit">
+      <button type="button" onclick="show4Rolls()"> Roll 4d6 - Lowest
+      </button>
+      <button type="button" onclick="show3Rolls()"> Roll 3d6
+      </button>
+      <button type="button" onclick="clearRolls()"> Clear Rolls
+      </button>
+      <p id="rolls">Your rolls are: 
+      </p>
+    </div>
+  </body>
+</html>
