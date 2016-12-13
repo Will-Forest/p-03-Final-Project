@@ -140,15 +140,15 @@ function classStats(){
   setCookie(hp,hp,3);
   window.alert("Stats saved!")
 }
-function subtractFullRank(){
-
+function subtractFullRank(i){
+document.getElementById("rank"+i).innerHTML -= 1
 }
-function subtractHalfRank(){
-
+function subtractHalfRank(i){
+document.getElementById("rank"+i).innerHTML -= .5
 }
-function addHalfRank(){
-
+function addHalfRank(i){
+document.getElementById("rank"+i).innerHTML = document.getElementById("rank"+i) +.5
 }
-function addFullRank(){
-
+function addFullRank(i){
+document.getElementById("rank"+i).innerHTML = document.getElementById("rank"+i).innerHTML +1
 }
